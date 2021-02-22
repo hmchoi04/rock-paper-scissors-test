@@ -23,23 +23,25 @@ function convertToWord(letter) {
 function win(user, computer) {
     userScore++; 
     userScore_span.innerHTML = userScore;
-    computerScore_span.innerHTML = computerScore_span; 
+    computerScore_span.innerHTML = computerScore 
     result_p.innerHTML = convertToWord(user) + " beats " + convertToWord(computer) + " You Won!"
 }
 
 function lose(user, computer) {
     computerScore++; 
-    userScore_span.innerHTML = userScore_span; 
-    computerScore_span = computerScore_span;
+    userScore_span.innerHTML = userScore; 
+    computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = convertToWord(computer) + " beats " + convertToWord(user) + " You Lost!"
 }
 
 function draw(user, computer) {
+    userScore_span.innerHTML = userScore; 
+    computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = "It's a tie!"
 }
 
 function game(userChoice) {
-    const comuterChoice = getComputerChoice();
+    const computerChoice = getComputerChoice();
     switch(userChoice + computerChoice) {
         case "rs":
         case "pr":

@@ -20,7 +20,7 @@ header h1 {
 }
 
 .score-board{
-    margin: 20;
+    margin: 20px auto;
     border: 3px solid white; 
     border-radius: 4px;
     text-align: center;
@@ -73,9 +73,14 @@ header h1 {
 }
 
 .choice img {
+    cursor: pointer;
+    background: #24272e;
+}
+
+/* .choice img {
     width: 10%; 
     height: 10%; 
-}
+} */
 
 #Action-message {
     text-align: center;
